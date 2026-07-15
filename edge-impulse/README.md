@@ -7,8 +7,18 @@ This folder documents the main deployment pipeline, which ran through Edge Impul
 - **Impulse design:** time-series input (window size ~1 s / 50 samples @ 50 Hz, window increase ~100 ms) + spectral analysis + classifier (2 dense layers, 20 neurons each, softmax output)
 - **Train/test split:** ~78% / 23% (project setup described as 80/20)
 
-## deployment/
-Put the exported Arduino library .zip (or its unzipped contents) from Edge Impulse's "Deployment" tab here — this is the package that gets flashed to the Arduino Nano 33 BLE Sense.
+## Edge Impulse Deployment
+
+This is the Arduino library package exported directly from Edge Impulse Studio 
+(Deployment tab → Arduino Library → Build).
+
+### To flash:
+1. Arduino IDE → Sketch → Include Library → Add .ZIP Library → select the .zip here
+2. File → Examples → [project]_inferencing → nano_ble33_sense_accelerometer
+3. Upload to Arduino Nano 33 BLE Sense
+
+### To run live inference:
+edge-impulse-run-impulse
 
 ## Deployed model results
 
