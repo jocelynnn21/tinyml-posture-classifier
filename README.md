@@ -1,4 +1,4 @@
-# TinyML Posture Classifier — Smart Desk Pet
+# TinyML Posture Classifier
 
 A real-time binary posture classifier (**good posture** vs. **slouch**) built for the Arduino Nano 33 BLE Sense as part of EE 446: TinyML for Ultra Low-Power Edge Computing, Spring 2026.
 
@@ -86,7 +86,6 @@ tinyml-posture-classifier/
 ## Links
 
 - **Edge Impulse public project:** https://studio.edgeimpulse.com/public/1014920/live
-- **Final report:** see `docs/report.pdf` (add if included)
 
 ---
 
@@ -101,3 +100,4 @@ tinyml-posture-classifier/
 - Only two posture states are classified (good, slouch) — no support for leaning, fidgeting, standing, or empty-chair detection.
 - Colab latency figures were measured on Colab CPU, not on-device; Edge Impulse/CLI timings are the ones relevant to actual deployment.
 - BLE output and OLED display were not completed in the final system.
+- Button implementation is in future work.
