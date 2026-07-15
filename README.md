@@ -44,9 +44,7 @@ tinyml-posture-classifier/
 │   ├── posture_compression.ipynb
 │   └── README.md
 ├── edge-impulse/                 ← Edge Impulse project artifacts + deployment package
-│   ├── deployment/               ← exported Arduino library/firmware from Edge Impulse
-│   └── README.md
-├── arduino/                      ← Arduino sketch(es) for running inference on-device
+│   ├── posture-classification-nano-33-ble-sense-v4-impulse-#1
 │   └── README.md
 ├── models/                       ← exported TFLite models from the compression study
 │   ├── model_float32.tflite
